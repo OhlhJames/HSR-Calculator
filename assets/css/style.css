@@ -1,0 +1,11 @@
+header {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: #13293d;
+    color: #fff;
+    text-align:center;
+  }
+form{
+  max-width: 400px;
+}
