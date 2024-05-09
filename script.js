@@ -4,12 +4,13 @@ const abundance = ["Gallagher","Huohuo", "Luocha", "Natasha", "Bailu", "Lynx"];
 const destruction = ["Xiyue", "Arlan", "Blade", "Clara", "Hook", "Dan Heng IL", "Jing Liu", "Physical MC"]
 const erudition = ["Jade","Herta", "Himeko", "Jing Yuan", "Serval", "Qingque", "Argenti"];
 const harmony = ["Asta", "Tingyun", "Bronya", "Hanya", "Ruan Mei"];
-const hunt = ["Boothill","Dr. Ratio", "Seele", "Dan Heng", "Sushang", "Topaz", "Topaz and Numby", "Yanqing"]
+const hunt = ["Dr. Ratio", "Seele", "Dan Heng", "Sushang", "Topaz", "Topaz and Numby", "Yanqing"]
 const nihility = ["Luka", "Kafka", "Sampo", "Pela", "Silver Wolf", "Welt"];
 const preservation = ["Aventurine","Gepard", "March 7th", "Fire MC", "Fu Xuan"];
 const nihility2 = ["Acheron","Black Swan"]
 const destruction2 = ["Misha","Firefly"]
 const harmony2 =["Sparkle", "Robin"]
+const hunt2 = ["Boothill"]
 const personalNeedP = document.getElementById('needed-mats-p');              
 const trailblaze_hand = document.getElementById('current-trailblaze-p');
 const button = document.getElementById("button");
@@ -53,6 +54,9 @@ let hsrRun = function(event){
     }
     if(destruction2.includes(path.value)){
         pathMat = "Moon Madness Fang"
+    }
+    if(hunt2.includes(path.value)){
+        pathMat = "Countertemporal Shot"
     }
     hsrCalc();
 }
