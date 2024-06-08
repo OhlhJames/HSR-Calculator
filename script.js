@@ -1,4 +1,3 @@
-
 const path = document.getElementById('character');
 const abundance = ["Gallagher","Huohuo", "Luocha", "Natasha", "Bailu", "Lynx"];
 const destruction = ["Xiyue", "Arlan", "Blade", "Clara", "Hook", "Dan Heng IL", "Jing Liu", "Physical MC"]
@@ -7,8 +6,8 @@ const harmony = ["Asta", "Tingyun", "Bronya", "Hanya", "Ruan Mei"];
 const hunt = ["Dr. Ratio", "Seele", "Dan Heng", "Sushang", "Topaz", "Topaz and Numby", "Yanqing"]
 const nihility = ["Luka", "Kafka", "Sampo", "Pela", "Silver Wolf", "Welt"];
 const preservation = ["Aventurine","Gepard", "March 7th", "Fire MC", "Fu Xuan"];
-const nihility2 = ["Acheron","Black Swan"]
-const destruction2 = ["Misha","Firefly"]
+const nihility2 = ["Acheron","Black Swan","Jiaoqiu"]
+const destruction2 = ["Misha","Firefly","Yunli"]
 const harmony2 =["Sparkle", "Robin","Imaginary MC"]
 const hunt2 = ["Boothill"]
 const personalNeedP = document.getElementById('needed-mats-p');              
