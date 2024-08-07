@@ -9,7 +9,8 @@ const preservation = ["Aventurine","Gepard", "March 7th", "Fire MC", "Fu Xuan"];
 const nihility2 = ["Acheron","Black Swan","Jiaoqiu"]
 const destruction2 = ["Misha","Firefly","Yunli"]
 const harmony2 =["Sparkle", "Robin","Imaginary MC"]
-const hunt2 = ["Boothill"]
+const hunt2 = ["Boothill", "Moze", "Feixiao", "Imaginary March 7th"]
+const abundance2 = ["Lingsha"]
 const personalNeedP = document.getElementById('needed-mats-p');              
 const trailblaze_hand = document.getElementById('current-trailblaze-p');
 const button = document.getElementById("button");
@@ -56,6 +57,9 @@ let hsrRun = function(event){
     }
     if(hunt2.includes(path.value)){
         pathMat = "Countertemporal Shot"
+    }
+    if(abundance2.includes(path.value)){
+        pathMat = "Scalding Soup"
     }
     hsrCalc();
 }
