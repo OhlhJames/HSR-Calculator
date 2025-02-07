@@ -1,16 +1,19 @@
 const path = document.getElementById('character');
-const abundance = ["Gallagher","Huohuo", "Luocha", "Natasha", "Bailu", "Lynx"];
+const abundance = ["Huohuo", "Luocha", "Natasha", "Bailu", "Lynx"];
+const abundance2 = ["Lingsha", "Gallagher"];
 const destruction = ["Xiyue", "Arlan", "Blade", "Clara", "Hook", "Dan Heng IL", "Jing Liu", "Physical MC"]
-const erudition = ["Jade","Herta", "Himeko", "Jing Yuan", "Serval", "Qingque", "Argenti"];
-const harmony = ["Asta", "Tingyun", "Bronya", "Hanya", "Ruan Mei"];
+const destruction2 = ["Misha","Firefly","Yunli"];
+const erudition = ["Herta", "Himeko", "Jing Yuan", "Serval", "Qingque", "Argenti"];
+const erudition2 = ["Jade", "Rappa", "The Herta"];
+const harmony = ["Asta", "Tingyun", "Bronya", "Hanya", "Ruan Mei", "Yukong"];
+const harmony2 =["Sparkle", "Robin","Imaginary MC", "Sunday"];
 const hunt = ["Dr. Ratio", "Seele", "Dan Heng", "Sushang", "Topaz", "Topaz and Numby", "Yanqing"]
-const nihility = ["Luka", "Kafka", "Sampo", "Pela", "Silver Wolf", "Welt"];
-const preservation = ["Aventurine","Gepard", "March 7th", "Fire MC", "Fu Xuan"];
-const nihility2 = ["Acheron","Black Swan","Jiaoqiu"]
-const destruction2 = ["Misha","Firefly","Yunli"]
-const harmony2 =["Sparkle", "Robin","Imaginary MC"]
-const hunt2 = ["Boothill", "Moze", "Feixiao", "Imaginary March 7th"]
-const abundance2 = ["Lingsha"]
+const hunt2 = ["Boothill", "Moze", "Feixiao", "Imaginary March 7th"];
+const nihility = ["Luka", "Kafka", "Sampo", "Pela", "Silver Wolf", "Welt", "Guinaifen"];
+const nihility2 = ["Acheron","Black Swan", "Fugue","Jiaoqiu"];
+const preservation = ["Gepard", "March 7th", "Fire MC", "Fu Xuan"];
+const preservation2 = ["Aventurine"];
+const remembrance = ["Ice MC", "Aglaea"]
 const personalNeedP = document.getElementById('needed-mats-p');              
 const trailblaze_hand = document.getElementById('current-trailblaze-p');
 const button = document.getElementById("button");
@@ -60,6 +63,15 @@ let hsrRun = function(event){
     }
     if(abundance2.includes(path.value)){
         pathMat = "Scalding Soup"
+    }
+    if(erudition2.includes(path.value)){
+        pathMat = "Exquisite Colored Draft"
+    }
+    if(preservation2.includes(path.value)){
+        pathMat = "Divine Amber"
+    }
+    if(remembrance.includes(path.value)){
+        pathMat = "Flower of Ālaya"
     }
     hsrCalc();
 }
