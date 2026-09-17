@@ -1,19 +1,24 @@
-const path = document.getElementById('character');
+onst path = document.getElementById('character');
 const abundance = ["Huohuo", "Luocha", "Natasha", "Bailu", "Lynx"];
 const abundance2 = ["Lingsha", "Gallagher"];
-const destruction = ["Xiyue", "Arlan", "Blade", "Clara", "Hook", "Dan Heng IL", "Jing Liu", "Physical MC"]
-const destruction2 = ["Misha", "Firefly", "Yunli", "Mydei", "Phainon", "Saber"];
+const destruction = ["Xiyue", "Arlan", "Blade", "Clara", "Hook", "Dan Heng IL", "Jing Liu", "Physical MC"];
+const destruction2 = ["Misha", "Firefly", "Yunli", "Mydei", "Phainon", "Saber", "The Dahlia"];
+const destruction3 = ["Gilgamesh"];
+const elation = ["Yao Guang", "Sparxie", "Evanescia", "Silver Wolf Lvl999", "Lightning MC", "Aventurine Waveflair"];
 const erudition = ["Herta", "Himeko", "Jing Yuan", "Serval", "Qingque", "Argenti"];
-const erudition2 = ["Jade", "Rappa", "The Herta","Anaxa"];
+const erudition2 = ["Jade", "Rappa", "The Herta", "Anaxa"];
+const erudition3 = ["Himeko Nova", "Rin Tohsaka"];
 const harmony = ["Asta", "Tingyun", "Bronya", "Hanya", "Ruan Mei", "Yukong"];
-const harmony2 =["Sparkle", "Robin","Imaginary MC", "Sunday", "Tribbie"];
+const harmony2 =["Sparkle", "Robin","Imaginary MC", "Sunday", "Tribbie", "Cerydra"];
 const hunt = ["Dr. Ratio", "Seele", "Dan Heng", "Sushang", "Topaz", "Topaz and Numby", "Yanqing"]
 const hunt2 = ["Boothill", "Moze", "Feixiao", "Imaginary March 7th", "Archer"];
+const hunt3 = ["Ashveil"];
 const nihility = ["Luka", "Kafka", "Sampo", "Pela", "Silver Wolf", "Welt", "Guinaifen"];
-const nihility2 = ["Acheron", "Black Swan", "Fugue","Jiaoqiu","Cipher"];
+const nihility2 = ["Acheron", "Black Swan", "Fugue", "Jiaoqiu", "Cipher", "Hysilens"];
+const nihility3 = ["Mortenax Blade"];
 const preservation = ["Gepard", "March 7th", "Fire MC", "Fu Xuan"];
-const preservation2 = ["Aventurine"];
-const remembrance = ["Ice MC", "Aglaea", "Castorice", "Hyacine"]
+const preservation2 = ["Aventurine", "Dan Heng PT"];
+const remembrance = ["Ice MC", "Aglaea", "Castorice", "Hyacine", "Evernight", "Cyrene", "Robin Sumeretto"]
 const personalNeedP = document.getElementById('needed-mats-p');              
 const trailblaze_hand = document.getElementById('current-trailblaze-p');
 const button = document.getElementById("button");
@@ -72,6 +77,18 @@ let hsrRun = function(event){
     }
     if(remembrance.includes(path.value)){
         pathMat = "Flower of Ālaya"
+    }
+    if(elation.includes(path.value)){
+        pathMat = "The Fluffy Collector's edition"
+    }
+    if(hunt3.includes(path.value)){
+        pathMat = "Lance of Retribution"
+    }
+    if(nihility3.includes(path.value)){
+        pathMat = "Heart of Phagousa"
+    }
+    if(erudition3.includes(path.value)){
+        pathMat = "Cosmic Sandpit"
     }
     hsrCalc();
 }
